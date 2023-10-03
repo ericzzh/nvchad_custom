@@ -12,6 +12,14 @@ local plugins = {
         require "custom.configs.lspconfig"
       end,
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        adaptive_size = true,
+      },
+    },
+  },
 }
 
 return plugins
