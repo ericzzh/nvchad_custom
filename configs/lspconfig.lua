@@ -53,7 +53,7 @@ local other_servers = {
   'rust_analyzer',
   'clangd',
   'pyright',
-  'jedi_language_server',
+  -- 'jedi_language_server',
   'jdtls',
 }
 
