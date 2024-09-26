@@ -8,13 +8,37 @@ return {
   },
 
   -- These are some examples, uncomment them if you want to see them work!
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
+    end,
+  },
+
   -- {
-  --   "neovim/nvim-lspconfig",
-  --   config = function()
-  --     require("nvchad.configs.lspconfig").defaults()
-  --     require "configs.lspconfig"
-  --   end,
+  --   "nvim-tree/nvim-tree.lua",
+  --   opts = {
+  --     actions = {
+  --       open_file = {
+  --         resize_window = false,
+  --       },
+  --     }
+  --   }
   -- },
+
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "mfussenegger/nvim-dap-python",
+      "nvim-neotest/nvim-nio",
+      "theHamsta/nvim-dap-virtual-text",
+    },
+    config = function()
+      require "configs.dapconf"
+    end,
+  }
   --
   -- {
   -- 	"williamboman/mason.nvim",

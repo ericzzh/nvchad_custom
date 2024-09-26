@@ -37,3 +37,7 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+local opt = vim.opt
+opt.fileencodings="utf-8,sjis,cp932,default"
+
