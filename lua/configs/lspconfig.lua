@@ -25,7 +25,7 @@ local my_attach = function(client, bufnr)
 end
 
 -- lsps with default config
-local servers = { "html", "cssls", 'gopls', 'tsserver', 'rust_analyzer', 'clangd', 'jdtls','bashls' }
+local servers = { "html", "cssls", 'gopls', 'tsserver', 'rust_analyzer', 'clangd', 'jdtls','bashls', 'groovyls' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = my_attach,
