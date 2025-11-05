@@ -29,12 +29,12 @@ return {
 
   {
     "mfussenegger/nvim-dap",
-    dependencies = {
-      "rcarriga/nvim-dap-ui",
-      "mfussenegger/nvim-dap-python",
-      "nvim-neotest/nvim-nio",
-      "theHamsta/nvim-dap-virtual-text",
-    },
+    -- dependencies = {
+    --   "rcarriga/nvim-dap-ui",
+    --   "mfussenegger/nvim-dap-python",
+    --   "nvim-neotest/nvim-nio",
+    --   "theHamsta/nvim-dap-virtual-text",
+    -- },
     config = function()
       require "configs.dapconf"
     end,
