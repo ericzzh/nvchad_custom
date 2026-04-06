@@ -26,16 +26,16 @@ return {
 
   {
     "mfussenegger/nvim-dap",
-    -- dependencies = {
-    --   "rcarriga/nvim-dap-ui",
-    --   "mfussenegger/nvim-dap-python",
-    --   "nvim-neotest/nvim-nio",
-    --   "theHamsta/nvim-dap-virtual-text",
-    -- },
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "mfussenegger/nvim-dap-python",
+      "nvim-neotest/nvim-nio",
+      "theHamsta/nvim-dap-virtual-text",
+    },
     config = function()
       require "configs.dapconf"
     end,
-  }
+  },
   --
   -- {
   -- 	"williamboman/mason.nvim",
@@ -56,4 +56,12 @@ return {
   -- 		},
   -- 	},
   -- },
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.nvim' }, -- if you use the mini.nvim suite
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons' },        -- if you use standalone mini plugins
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+    cmd = 'RenderMarkdown',
+    opts = {},
+  }
 }
