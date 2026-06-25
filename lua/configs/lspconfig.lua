@@ -20,6 +20,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
-local servers = { "html", "cssls", 'pyright', 'gopls', 'ts_ls', 'rust_analyzer', 'clangd', 'jdtls','bashls', 'groovyls' }
+local servers = { "html", "cssls", 'basedpyright', 'gopls', 'ts_ls', 'rust_analyzer', 'clangd', 'jdtls','bashls', 'groovyls' }
 vim.lsp.enable(servers)
 
